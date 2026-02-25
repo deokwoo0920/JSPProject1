@@ -1,8 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.util.*"%>
 <%@ page import="java.text.SimpleDateFormat"%>
-<%@ taglib prefix="c" uri="jakarta.tags.core"%>
-<%@ taglib prefix="fmt" uri="jakarta.tags.fmt"%>
 
 <%
     /*
@@ -12,9 +10,9 @@
     */
     // 날짜 생성
     Date now = new Date();
-    SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd");
+    SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd_HH:mm:ss");
     
-    // 쿠키 생성
+    // 쿠키 생성(쿠키에 문자열 저장시 " " 공백은 예외가 발생합니다.)
     Cookie show = new Cookie("show", date.format(now));  // "show":쿠키 이름
     /*
     쿠키의 메서드
