@@ -30,6 +30,7 @@
         <c:if test='${name.equals("홍길동")}'>
             if가 true 인 경우에 실행됩니다.
         </c:if>
+        <%-- String name2 로컬 변수의 값을 변수 선언해서 pageContext로 등록 선언 --%>
         <c:set var="name2" value="<%= name2%>"></c:set>
         <br>
         ${name2}

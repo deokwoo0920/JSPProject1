@@ -1,4 +1,9 @@
+controller\CartServlet.class
+controller\BmiServlet.class
+dto\UserInfo.class
+dto\Product.class
 controller\GugudanServlet.class
 controller\TestServlet.class
-dto\UserInfo.class
+dto\Member.class
 controller\CheckLogin.class
+controller\MemberServlet.class
